@@ -10,7 +10,7 @@ h2{
 }
 
 p{
-  @apply text-blue-700 text-2xl;
+  @apply text-blue-700 text-3xl;
 }
 h3{
   @apply  text-4xl mb-8 font-bold;
