@@ -18,7 +18,7 @@ function deleteElements () {
   deleteChildren(document.getElementById('letters'))
 }
 
-function restart() {
+function restart () {
   deleteElements()
 
   stage.changeStage(0)
@@ -57,21 +57,20 @@ const page2 = document.getElementById('page2')
 const btn = document.getElementById('btn')
 
 // Click "End Game"
-btn.addEventListener('click', function handleClick() {
+btn.addEventListener('click', function handleClick () {
   if (page2.hidden) {
     page2.style.display = 'block'
 
     btn.textContent = 'End Game'
 
     page2.hidden = false
-    
+
     const savedStatus = window.localStorage.getItem('status')
 
     if (savedStatus !== null && savedStatus) {
       restart()
       window.localStorage.setItem('status', false)
     }
-
   } else {
     page2.hidden = true
 
@@ -83,4 +82,4 @@ btn.addEventListener('click', function handleClick() {
   }
 })
 
-export { stage, restart}
+export { stage, restart }
